@@ -20,7 +20,7 @@ limitations under the License.
       <simple-card style="min-height: 30rem;">
         <div>
           <h4 class="border-bottom text-center text-lg-left text-secondary">
-            <i class="fa fa-users mr-2"/>
+            <i class="fa fa-users mr-2" aria-hidden="true"/>
             <span class="">
             <template v-if="initialLoad">
               <b-spinner label="Loading..." style="width: 1rem; height: 1rem;" variant="info"/>
@@ -49,7 +49,7 @@ limitations under the License.
               <router-link :to="{ name:'ClientDisplayPreview',
                       params: { projectId: $route.params.projectId, userId: props.row.userId, dn: props.row.dn }}"
                            tag="button" class="btn btn-outline-primary">
-                <span class="d-none d-sm-inline">Details</span><i class="fas fa-arrow-circle-right ml-sm-1"/>
+                <span class="d-none d-sm-inline">Details</span><i class="fas fa-arrow-circle-right ml-sm-1" aria-hidden="true"/>
               </router-link>
             </div>
           </v-server-table>
