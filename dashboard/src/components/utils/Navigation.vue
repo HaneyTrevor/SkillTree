@@ -159,7 +159,7 @@ limitations under the License.
   }
 
   .nav-title {
-    color: darkslategray;
+    color: #3f5971;
   }
 
 </style>
