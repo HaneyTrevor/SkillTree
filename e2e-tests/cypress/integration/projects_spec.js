@@ -603,5 +603,12 @@ describe('Projects Tests', () => {
     cy.get('[data-cy=editLevelButton]').eq(3).should('have.focus');
   });
 
+  it.only('lighthouse and accessibility', () => {
+    cy.visit('/');
+    cy.contains('Metrics').click();
+    cy.customLighthouse();
+    cy.customPa11y();
+  });
+
 });
 
